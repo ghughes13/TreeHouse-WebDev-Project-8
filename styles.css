@@ -65,7 +65,7 @@ nav {
 }
 
 #title {
-  visibility: hidden;
+  visibility: visible;
 }
 
 #container {
@@ -146,7 +146,7 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 15px;
+  margin-right: 0px;
 }
 
 .dogbox p {
@@ -162,18 +162,22 @@ footer {
   color: #ba8058;
 }
 
+.logoSVG #text {
+  visibility: hidden;
+}
+
 /*****Media Queries*****/
 
-@media (max-width: 425px) {
+@media (min-width: 425px) {
   .logoSVG #text {
-    visibility: hidden;
-  }
-
-  #title {
     visibility: visible;
   }
 
+  #title {
+    visibility: hidden;
+  }
+
   .dogbox {
-    margin-right: 0;
+    margin-right: 15px;
   }
 }
